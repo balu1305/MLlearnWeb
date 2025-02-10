@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Our Courses</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('ml_learn') }}">ML Learn</a></li>
+                <li><a href="{{ url_for('web_dev') }}">Web Development</a></li>
+                <li><a href="{{ url_for('ai') }}">Artificial Intelligence</a></li>
+                <li><a href="{{ url_for('app_dev') }}">App Development</a></li>
+                <li><a href="{{ url_for('cyber_sec') }}">Cyber Security</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="courses">
+            <div class="course-card">
+                <h3>Machine Learning</h3>
+                <p>Learn the basics of Machine Learning and build real-world projects.</p>
+                <a href="{{ url_for('ml_learn') }}">Start Learning</a>
+            </div>
+            <div class="course-card">
+                <h3>Web Development</h3>
+                <p>Learn HTML, CSS, JavaScript, and various web development frameworks.</p>
+                <a href="{{ url_for('web_dev') }}">Start Learning</a>
+            </div>
+            <div class="course-card">
+                <h3>Artificial Intelligence</h3>
+                <p>Learn about AI concepts, algorithms, and applications.</p>
+                <a href="{{ url_for('ai') }}">Start Learning</a>
+            </div>
+            <div class="course-card">
+                <h3>App Development</h3>
+                <p>Learn to build mobile applications for Android and iOS.</p>
+                <a href="{{ url_for('app_dev') }}">Start Learning</a>
+            </div>
+            <div class="course-card">
+                <h3>Cyber Security</h3>
+                <p>Learn to secure systems, networks, and data from cyber threats.</p>
+                <a href="{{ url_for('cyber_sec') }}">Start Learning</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

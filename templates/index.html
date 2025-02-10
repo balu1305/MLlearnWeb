@@ -1,0 +1,233 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="ml-world"></section>
+    <h3>Imagine a World with Machine Learning</h3>
+    <p>Imagine a world where your Netflix recommendations perfectly match your taste, self-driving cars navigate traffic with ease, and Google Translate breaks language barriers in real time. Machine Learning (ML) powers these innovations and more—detecting fraud in banking, predicting diseases from medical scans, chatbots like ChatGPT that understand and respond like humans, and personalized shopping experiences on Amazon. From AI-powered assistants like Siri to detecting fake news and cyber threats, ML is shaping the future in every industry. Learning ML isn’t just about coding—it’s about building intelligent systems that transform the way we live and work! 🚀</p>
+</section>
+
+<section class="roadmap">
+    <h3>🚀 15-20 Day Machine Learning Roadmap for Beginners (2 Hours Daily)</h3>
+    <p>This beginner-friendly roadmap will help you quickly learn basic Machine Learning (ML) and AI while building 3 real-world projects in just 15-20 days. You’ll work on data handling, ML models, and deployment—perfect for adding to your SDE or Data Science resume.</p>
+
+    <h4>📅 Week 1: ML Foundations & Supervised Learning (7 Days)</h4>
+    <p><strong>💡 Goal:</strong> Learn Python for ML, Basic ML algorithms, and build your first Regression & Classification models.</p>
+
+    <button class="collapsible">📌 Day 1-2: Python & Data Handling (4 Hours) <input type="checkbox"></button>
+    <div class="content">
+        <ul>
+            <li>Basics of Python needed for ML (lists, functions, loops).</li>
+            <li>Introduction to NumPy (arrays, matrix operations).</li>
+            <li>Introduction to Pandas (loading, manipulating datasets).</li>
+            <li>Matplotlib & Seaborn for data visualization.</li>
+        </ul>
+        <p><strong>Practice Task:</strong> Load a CSV dataset (like the Titanic dataset from Kaggle). Perform basic operations like checking for missing values, displaying statistics of numeric columns, and plotting bar charts, histograms, and correlation heatmaps.</p>
+        <p><strong>Resources:</strong></p>
+        <ul>
+            <li><a href="https://pandas.pydata.org/docs/" target="_blank">Pandas Official Docs</a></li>
+            <li><a href="https://numpy.org/doc/" target="_blank">NumPy Official Docs</a></li>
+            <li><a href="https://www.kaggle.com/c/titanic" target="_blank">Kaggle Titanic Dataset</a></li>
+        </ul>
+        <button class="notes-button">Notes</button>
+        <div class="notes-content">
+            <textarea placeholder="Enter your notes here..."></textarea>
+        </div>
+    </div>
+
+    <button class="collapsible">📌 Day 3: Introduction to Machine Learning (2 Hours) <input type="checkbox"></button>
+    <div class="content"></div>
+        <ul>
+            <li>What is Machine Learning?</li>
+            <li>Supervised vs. Unsupervised Learning.</li>
+            <li>ML workflow: Data → Model → Evaluation → Deployment.</li>
+            <li>Introduction to Scikit-Learn (ML library in Python).</li>
+        </ul>
+        <p><strong>Practice Task:</strong> Try fitting a simple model using Scikit-Learn on the Titanic dataset. Split data into training/testing sets using train_test_split().</p>
+        <p><strong>Resources:</strong></p>
+        <ul>
+            <li><a href="https://developers.google.com/machine-learning/crash-course/ml-intro" target="_blank">Google ML Crash Course</a></li>
+            <li><a href="https://scikit-learn.org/stable/" target="_blank">Scikit-Learn Documentation</a></li>
+        </ul>
+        <button class="notes-button">Notes</button>
+        <div class="notes-content">
+            <textarea placeholder="Enter your notes here..."></textarea>
+        </div>
+    </div>
+
+    <button class="collapsible">📌 Day 4-5: Supervised Learning – Regression (4 Hours) <input type="checkbox"></button>
+    <div class="content">
+        <ul>
+            <li>Linear Regression (Predicting continuous values).</li>
+            <li>Understanding Mean Squared Error (MSE) and R² score.</li>
+            <li>Training a House Price Predictor using Linear Regression.</li>
+        </ul>
+        <p><strong>Practice Task:</strong> Project: House Price Prediction. Use the Boston House Prices dataset from Scikit-Learn. Train a Linear Regression Model to predict house prices based on features like area, number of rooms, etc.</p>
+        <p><strong>Resources:</strong></p>
+        <ul>
+            <li><a href="https://scikit-learn.org/stable/supervised_learning.html#supervised-learning" target="_blank">Scikit-Learn Regression Guide</a></li>
+            <li><a href="https://www.kaggle.com/c/house-prices-advanced-regression-techniques" target="_blank">Kaggle House Prices Dataset</a></li>
+        </ul>
+        <button class="notes-button">Notes</button>
+        <div class="notes-content">
+            <textarea placeholder="Enter your notes here..."></textarea>
+        </div>
+    </div>
+
+    <button class="collapsible">📌 Day 6-7: Supervised Learning – Classification (4 Hours) <input type="checkbox"></button>
+    <div class="content">
+        <ul>
+            <li>Logistic Regression (Predicting categorical values).</li>
+            <li>Decision Trees, Random Forest, K-Nearest Neighbors (KNN).</li>
+            <li>Evaluating models using accuracy, precision, recall, and confusion matrix.</li>
+        </ul>
+        <p><strong>Practice Task:</strong> Project: Spam Email Classifier. Use SMS Spam Collection Dataset (Download from Kaggle). Train a Logistic Regression model to classify messages as spam or not spam. Convert text into numeric data using TF-IDF Vectorizer.</p>
+        <p><strong>Resources:</strong></p>
+        <ul>
+            <li><a href="https://scikit-learn.org/stable/supervised_learning.html#supervised-learning" target="_blank">Scikit-Learn Classification Guide</a></li>
+            <li><a href="https://www.kaggle.com/uciml/sms-spam-collection-dataset" target="_blank">Kaggle SMS Spam Collection Dataset</a></li>
+        </ul>
+        <button class="notes-button">Notes</button>
+        <div class="notes-content">
+            <textarea placeholder="Enter your notes here..."></textarea>
+        </div>
+    </div>
+
+    <h4>📅 Week 2: Unsupervised Learning & Model Deployment (7 Days)</h4>
+    <p><strong>💡 Goal:</strong> Learn Unsupervised Learning (Clustering, Dimensionality Reduction) and Deploy an ML Model as a Web App.</p>
+
+    <button class="collapsible">📌 Day 8-9: Unsupervised Learning – Clustering (4 Hours) <input type="checkbox"></button>
+    <div class="content">
+        <ul>
+            <li>What is Unsupervised Learning?</li>
+            <li>Introduction to Clustering (K-Means, DBSCAN).</li>
+            <li>Introduction to Dimensionality Reduction (PCA).</li>
+        </ul>
+        <p><strong>Practice Task:</strong> Project: Customer Segmentation. Use E-commerce dataset (download from Kaggle). Apply K-Means Clustering to group customers based on their purchasing behavior.</p>
+        <p><strong>Resources:</strong></p>
+        <ul>
+            <li><a href="https://scikit-learn.org/stable/unsupervised_learning.html#unsupervised-learning" target="_blank">Scikit-Learn Clustering Guide</a></li>
+            <li><a href="https://www.kaggle.com/c/ecommerce-data" target="_blank">Kaggle E-commerce Dataset</a></li>
+        </ul>
+        <button class="notes-button">Notes</button>
+        <div class="notes-content">
+            <textarea placeholder="Enter your notes here..."></textarea>
+        </div>
+    </div>
+
+    <button class="collapsible">📌 Day 10-11: Basic NLP (Text Processing) (4 Hours) <input type="checkbox"></button>
+    <div class="content">
+        <ul>
+            <li>What is Natural Language Processing (NLP)?</li>
+            <li>Tokenization, Stopword Removal, Lemmatization.</li>
+            <li>TF-IDF Vectorization (Convert text into numbers).</li>
+        </ul>
+        <p><strong>Practice Task:</strong> Improve the Spam Email Classifier by applying NLP preprocessing techniques. Convert text messages into numerical features using TF-IDF before training the model.</p>
+        <p><strong>Resources:</strong></p>
+        <ul>
+            <li><a href="https://www.nltk.org/" target="_blank">NLTK Official Documentation</a></li>
+            <li><a href="https://scikit-learn.org/stable/modules/feature_extraction.html#text-feature-extraction" target="_blank">Scikit-Learn TF-IDF Guide</a></li>
+        </ul>
+        <button class="notes-button">Notes</button>
+        <div class="notes-content">
+            <textarea placeholder="Enter your notes here..."></textarea>
+        </div>
+    </div>
+
+    <button class="collapsible">📌 Day 12-13: Deploying an ML Model (4 Hours) <input type="checkbox"></button>
+    <div class="content">
+        <ul>
+            <li>Introduction to Flask and Streamlit for model deployment.</li>
+            <li>How to create an API endpoint for your ML model.</li>
+            <li>Deploying your model as a simple web application.</li>
+        </ul>
+        <p><strong>Practice Task:</strong> Project: Deploy House Price Prediction Model. Build a Flask or Streamlit web app for users to input house details and get price predictions.</p>
+        <p><strong>Resources:</strong></p>
+        <ul>
+            <li><a href="https://flask.palletsprojects.com/en/2.0.x/" target="_blank">Flask Documentation</a></li>
+            <li><a href="https://docs.streamlit.io/" target="_blank">Streamlit Quick Start</a></li>
+        </ul>
+        <button class="notes-button">Notes</button>
+        <div class="notes-content">
+            <textarea placeholder="Enter your notes here..."></textarea>
+        </div>
+    </div>
+
+    <button class="collapsible">📌 Day 14: GitHub & Resume (2 Hours) <input type="checkbox"></button>
+    <div class="content">
+        <ul>
+            <li>Upload projects to GitHub.</li>
+            <li>Write a README file explaining each project.</li>
+            <li>Improve your resume by adding your ML skills.</li>
+        </ul>
+        <p><strong>Practice Task:</strong> Upload all your Jupyter Notebooks & Python scripts to GitHub. Add project descriptions & screenshots.</p>
+        <p><strong>Resources:</strong></p>
+        <ul>
+            <li><a href="https://www.makeareadme.com/" target="_blank">How to Write a Good README</a></li>
+        </ul>
+        <button class="notes-button">Notes</button>
+        <div class="notes-content">
+            <textarea placeholder="Enter your notes here..."></textarea>
+        </div>
+    </div>
+
+    <h4>📅 Last 5 Days: Strengthen Portfolio with Final Projects</h4>
+    <p>Spend 2-3 days per project to refine and finalize them:</p>
+    <ul>
+        <li>House Price Prediction (Regression)</li>
+        <li>Spam Email Classifier (NLP)</li>
+        <li>Customer Segmentation (Unsupervised Learning)</li>
+        <li>Deploy one project using Flask/Streamlit.</li>
+    </ul>
+    <input type="checkbox"> Final Projects Completed
+    <button class="notes-button">Notes</button>
+    <div class="notes-content">
+        <textarea placeholder="Enter your notes here..."></textarea>
+    </div>
+
+    <h4>🎯 What You'll Achieve by the End of This Roadmap</h4>
+    <ul>
+        <li>✅ 3 Machine Learning projects ready for your portfolio.</li>
+        <li>✅ Basic knowledge of ML algorithms (Regression, Classification, Clustering).</li>
+        <li>✅ One deployed model accessible via a web app.</li>
+        <li>✅ Improved GitHub profile & Resume.</li>
+    </ul>
+
+    <h4>💡 Next Steps (If You Want to Go Further)</h4>
+    <ul>
+        <li>Start a Kaggle competition (even if you don’t win, you learn!).</li>
+        <li>Learn Deep Learning basics (Neural Networks, CNNs, RNNs).</li>
+        <li>Explore MLOps & Model Deployment on AWS/GCP.</li>
+    </ul>
+
+
+</section>
+
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        });
+    }
+
+    var notesButtons = document.getElementsByClassName("notes-button");
+    for (i = 0; i < notesButtons.length; i++) {
+        notesButtons[i].addEventListener("click", function() {
+            var notesContent = this.nextElementSibling;
+            if (notesContent.style.display === "block") {
+                notesContent.style.display = "none";
+            } else {
+                notesContent.style.display = "block";
+            }
+        });
+    }
+</script>
+{% endblock %}
