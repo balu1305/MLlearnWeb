@@ -18,6 +18,7 @@
                 <li><a href="{{ url_for('ai') }}">Artificial Intelligence</a></li>
                 <li><a href="{{ url_for('app_dev') }}">App Development</a></li>
                 <li><a href="{{ url_for('cyber_sec') }}">Cyber Security</a></li>
+                <li class="user-info">{{ session['username'] }}</li>
             </ul>
         </nav>
     </header>
